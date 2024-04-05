@@ -1,9 +1,13 @@
-
+import logo from "../../../assets/logo.png"
+import moment from 'moment';
 
 const Header = () => {
     return (
         <div>
-            <h2 className="text-3xl">This is Header</h2>
+            <img src={logo} alt="" />
+            <p className="font-poppins text-xl text-gray-600">Journalism Without Fear or Favour</p>
+            <p>{moment().format("dddd, MMMM Do YYYY")}</p>
+            
         </div>
     );
 };
